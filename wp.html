@@ -88,6 +88,20 @@
 		.w80 { width:80%; }
 		.w90 { width:90%; }
 		
+		.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+		}
+		.video-responsive iframe{
+				left:0;
+				top:0;
+				height:100%;
+				width:100%;
+				position:absolute;
+		}
+		
 		p { font-size:16px; }
 		h1 { font-size:25px; }
 		h2 { font-size:20px; }
@@ -151,15 +165,19 @@
 		<div class="wrapper fclear">
 			<div>
 				<h1 class="tcenter bottomPadding">Wellness Partner Details</h1>
-				<p class="bottomPadding">Ready to jump in with both feet? Yay, I'm glad. I started out as a Preferred Customer, but quickly realized that being a Wellness Parter is the way to go. You may just have a knack for networking, or know a lot of people who need Amare.</p>
-				<p class="bottomPadding">Watch <a class="link purple" href="https://www.amareinfo.com/asset/show?id=L5T6MK2P" target="_blank">this video</a> to understand the compensation plan.</p>
+				<p class="bottomPadding">Ready to jump in with both feet? Yay, I'm glad. I started out as a Preferred Customer, but quickly realized that being a Wellness Parter is the way to go. You may just have a knack for networking, or know a lot of people who need Amare. Watch the video, to understand the compensation plan.</p>
+				<div class="bottomPadding mcenter" style="max-width:600px;">
+					<div class="video-responsive">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/uwav6A3qayQ?modestbranding=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen></iframe>
+					</div>
+				</div>
 				<p class="bottomPadding">You can also look at the <a class="link purple" href="https://amareassets.blob.core.windows.net/webassets/resources/Compensation/AmareCompPlanBooklet.pdf" target="_blank">compensation plan booklet</a>.</p>
 				<p class="bottomPadding">If you still have questions, I'm more than happy to help at any time. Email me at <a class="link purple" href="mailto:naturalguthealing@gmail.com">naturalguthealing@gmail.com</a></p>
 			</div>			
 		</div>
 		<div class="wrapper tcenter bottomPadding">
 			<a href="https://www.amare.com/27507/account/register?preferred=true" class="button">Become a Wellness&nbsp;Partner</a>
-		</div></a>
+		</div>
 	</section>
 	
 	<script src="https://player.vimeo.com/api/player.js"></script>
