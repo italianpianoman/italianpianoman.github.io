@@ -77,6 +77,20 @@ section { display:block; padding:25px 0 0 0; }
 .w80 { width:80%; }
 .w90 { width:90%; }
 
+.video-responsive{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+}
+.video-responsive iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+
 p { font-size:16px; }
 h1 { font-size:25px; }
 h2 { font-size:20px; }
