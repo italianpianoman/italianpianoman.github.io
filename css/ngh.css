@@ -6,8 +6,6 @@ h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
 .blueBG { background: #0C549B; background: -moz-radial-gradient(center,ellipse cover,#0C549B 0,#0D58A2 100%); background: -webkit-radial-gradient(center,ellipse cover,#0C549B 0,#0D58A2 100%); background: radial-gradient(ellipse at center,#0C549B 0,#0D58A2 100%); color: #fff; }
 .purpleBG { background: -webkit-radial-gradient(#7B5BA0,#3F2A56); background: -o-radial-gradient(#7B5BA0,#3F2A56); background: -moz-radial-gradient(#7B5BA0,#3F2A56); background: radial-gradient(#7B5BA0,#3F2A56); color: #fff; }
 p > strong { color:#7B5BA0; }
-strong:hover { color:#7B5BA0; }
-/*p, .learned, ol { font-family:Helvetica, Arial, sans-serif; }*/
 p { font-size::14px; line-height:25px }
 .learned li:not(:last-child) { padding-bottom:20px; }
 
