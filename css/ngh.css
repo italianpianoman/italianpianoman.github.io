@@ -93,7 +93,7 @@ section { display:block; padding:25px 0 0 0; }
 
 p { font-size:16px; }
 h1 { font-size:25px; }
-h2 { font-size:20px; }
+h2 { font-size:24px; }
 ul[data-count="diseases"] { columns: 4; -webkit-columns: 4; -moz-columns: 4; margin-bottom: 0; }
 ul.diseases li:hover { font-weight:bold; color:red; } 
 
