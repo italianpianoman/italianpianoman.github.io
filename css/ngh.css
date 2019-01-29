@@ -125,7 +125,7 @@ ul.diseases li:hover { font-weight:bold; color:red; }
 }
 
 @media only screen and (max-width:479px) {
-	.surveybutton { font-size:12px; margin-top:11px; padding:8px 12px; }
+	.surveybutton { font-size:12px; margin-top:11px; padding:8px 11px; }
 	ul[data-count="diseases"] { columns: 1; -webkit-columns: 1; -moz-columns: 1; }
 	.brett { max-width:120px; float:right; margin:0 0 10px 20px; }
 	.family, .fpack { margin:0 0 20px 0; max-width:500px; width:100%; }
