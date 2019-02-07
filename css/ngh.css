@@ -130,3 +130,6 @@ ul.diseases li:hover { font-weight:bold; color:red; }
 	.brett { max-width:120px; float:right; margin:0 0 10px 15px; }
 	.family, .fpack { margin:0 0 20px 0; max-width:500px; width:100%; }
 }
+@media only screen and (max-width:375px) {
+	h2 { font-size:21px; }
+}
