@@ -112,6 +112,7 @@ ul.diseases li:hover { font-weight:bold; color:red; }
 	#top h1 { padding-top:0; }
 	.w10, .w20, .w30, .w35, .w40, .w45, .w50, .w60, .w70, .w80, .w90 { width:100%; }
 	.bottomPadding { padding-bottom:20px; }
+	section { padding:20px 0 0 0; }
 	ul[data-count="diseases"] { columns: 3; -webkit-columns: 3; -moz-columns: 3; }
 	.mobhide { display:none !important; }
 	.brett { max-width:200px; margin:0 20px 10px 0; }
