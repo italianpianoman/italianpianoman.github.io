@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
 	.header li { float: left; font-size:20px; }
 	.header li a { padding: 16px 30px; }
 	.header .menu { clear: none; float: right; max-height: none; }
-	.header .menu-icon { display: none;	}
+	.header .menu-icon { display: none; }
 }
 
 .blue { color: #003C71; }
@@ -74,19 +74,8 @@ section { display:block; padding:25px 0 0 0; }
 .w80 { width:80%; }
 .w90 { width:90%; }
 
-.video-responsive{
-	overflow:hidden;
-	padding-bottom:56.25%;
-	position:relative;
-	height:0;
-}
-.video-responsive iframe{
-	left:0;
-	top:0;
-	height:100%;
-	width:100%;
-	position:absolute;
-}
+.video-responsive { overflow:hidden; padding-bottom:56.25%; position:relative; height:0; }
+.video-responsive iframe { left:0; top:0; height:100%; width:100%; position:absolute; }
 
 p { font-size:16px; line-height:25px; }
 h1 { font-size:25px; }
@@ -102,6 +91,19 @@ ul.diseases li:hover { font-weight:bold; color:red; }
 .brett, .fpack { max-width:300px; margin:0 20px 20px 0; }
 .family { max-width:400px; float:right; margin:0 0 15px 20px; }
 .fpack { max-width:360px; }
+
+/* Contact Form */
+.form-container { align-items: center; background: #fff; border-radius: 6px; box-shadow: 0 10px 50px 0 #ccc; display: flex; flex-direction: column; justify-content: center; margin: 0 auto; margin-bottom: 2rem; max-width: 350px; min-height: 300px; padding: 2rem; position: relative; text-align: center; }
+.form-container input { appearance: none; background: #eee; border: none; border-radius: 3px; box-sizing: border-box; font-size: inherit; margin-bottom: 1rem; padding: 1rem; width: 100%; }
+.is-hidden { display: none !important; }
+
+@keyframes rotate { 100% { transform: rotate(360deg); } }
+@keyframes dash { 0% { stroke-dasharray: 1,200; stroke-dashoffset: 0; } 50% { stroke-dasharray: 89,200; stroke-dashoffset: -35; } 100% { stroke-dasharray: 89,200; stroke-dashoffset: -124; } }
+
+.loading { align-items: center; display: flex; flex-direction: column; justify-content: center; left: 0; position: absolute; right: 0; top: 120px; }
+.loading-spinner { height: 50px; width: 50px; }
+.loading-spinner svg { animation: rotate 2s linear infinite; height: 50px; position: relative; width: 50px; }
+.loading-spinner circle { animation: dash 1.5s ease-in-out infinite; stroke: #593f7b; stroke-dasharray: 1, 200; stroke-dashoffset: 0; stroke-linecap: round; }
 
 @media only screen and (max-width:1024px) {
 	.w35, .w60 { width:48%; }
@@ -123,6 +125,7 @@ ul.diseases li:hover { font-weight:bold; color:red; }
 @media only screen and (max-width:620px) {
 	h1 { font-size:20px; }
 	ul[data-count="diseases"] { columns: 2; -webkit-columns: 2; -moz-columns: 2; }
+	.form-container { box-shadow:none; margin-bottom: 1rem; padding:20px; }
 }
 
 @media only screen and (max-width:479px) {
