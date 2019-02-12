@@ -93,7 +93,7 @@ ul.diseases li:hover { font-weight:bold; color:red; }
 .fpack { max-width:360px; }
 
 /* Contact Form */
-.form-container { align-items: center; background: #fff; border-radius: 6px; box-shadow: 0 10px 50px 0 #ccc; display: flex; flex-direction: column; justify-content: center; margin: 0 auto; margin-bottom: 2rem; max-width: 350px; min-height: 300px; padding: 2rem; position: relative; text-align: center; }
+.form-container { align-items: center; background: #fff; border-radius: 6px; box-shadow: 0 10px 50px 0 #ccc; display: flex; flex-direction: column; justify-content: center; margin: 0 auto; margin-bottom: 2rem; max-width: 350px; min-height: 100px; padding: 2rem; position: relative; text-align: center; }
 .form-container input { appearance: none; background: #eee; border: none; border-radius: 3px; box-sizing: border-box; font-size: inherit; margin-bottom: 1rem; padding: 1rem; width: 100%; }
 .is-hidden { display: none !important; }
 
