@@ -7,7 +7,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-133358812-1');
 </script>
 <title>Get in touch with us</title>
@@ -40,11 +39,30 @@
 		<div class="wrapper fclear">
 			<div class="tcenter">
 				<h1>Contact Info</h1>
-				<p class="topSpacing">Fee free to reach out with questions. I'm more than happy to help at any time.</p>
+				<p class="topSpacing">Fee free to reach out with questions. I'm more than happy to help at&nbsp;any&nbsp;time.</p>
 				<p class="topSpacing">Email me at <a class="link purple" href="mailto:naturalguthealing@gmail.com">naturalguthealing@gmail.com</a></p>
-				<p class="topSpacing">You can also find me on <a class="link purple" href="https://www.facebook.com/italianpianoman" target="_blank">Facebook</a></p>
+				<p class="topSpacing bottomPadding">You can also find me on <a class="link purple" href="https://www.facebook.com/italianpianoman" target="_blank">Facebook</a></p>
 			</div>
 			
+		</div>
+		
+		<div class="form-container">
+			<form name="submit-to-google-sheet">
+        <h3 class="bottomSpacing">Want us to call you?</h3>
+				<input name="Name" type="text" placeholder="Name" required>
+				<input name="Phone" type="text" placeholder="Phone" required>
+				<input name="Time To Call" type="text" placeholder="Best time to call">
+				<button type="submit" class="button topSpacing">Submit</button>
+			</form>
+
+			<div class="loading js-loading is-hidden">
+				<div class="loading-spinner">
+					<svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
+				</div>
+			</div>
+
+			<h3 class="js-success-message is-hidden">Thanks!<br />We'll be in touch.</h3>
+			<p class="js-error-message is-hidden"><strong>Sorry, it didn't work.<br />Refresh and try again.</strong></p>
 		</div>
 	</section>
 	
@@ -57,5 +75,42 @@
 			});
 		});
 	</script>
+	
+	<script src="https://wzrd.in/standalone/formdata-polyfill@latest"></script>
+  <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+  <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+	
+	<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbygyJ5W2v-kIS4NIwhAqPwg5TZA9K9jNEiRof_RM7rcdlZiQOie/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const loading = document.querySelector('.js-loading')
+    const successMessage = document.querySelector('.js-success-message')
+    const errorMessage = document.querySelector('.js-error-message')
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      showLoadingIndicator()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => showSuccessMessage(response))
+        .catch(error => showErrorMessage(error))
+    })
+    function showLoadingIndicator () {
+      form.classList.add('is-hidden')
+      loading.classList.remove('is-hidden')
+    }
+    function showSuccessMessage (response) {
+      console.log('Success!', response)
+      setTimeout(() => {
+        successMessage.classList.remove('is-hidden')
+        loading.classList.add('is-hidden')
+      }, 500)
+    }
+    function showErrorMessage (error) {
+      console.error('Error!', error.message)
+      setTimeout(() => {
+        errorMessage.classList.remove('is-hidden')
+        loading.classList.add('is-hidden')
+      }, 500)
+    }
+  </script>
 </body>
 </html>
