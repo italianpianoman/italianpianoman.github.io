@@ -39,7 +39,7 @@
 <meta name="content-language" content="en">
 <meta name="google-site-verification" content="bYrAcOQiNtuBNgbqO5CmsJ4hlLS-X3pAWti0549E_Hg" />
 <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
-<link href="css/ngh.css" rel="stylesheet">
+<link href="/css/ngh.css" rel="stylesheet">
 </head>
 
 <body>
@@ -178,122 +178,103 @@
 	</section>
 	
 	<section>
-		<div class="container-fluid" align="center">
-
-<div class="col-sm-1 col-md-1"></div>
-<div class="col-sm-20 col-md-10" align="center">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <style>
-	.errMsg{
-		color: red;
-		text-align:center;	
-		display: none;
-	}
-	</style>
-<form id="frmForm" method="post" action="https://www.amentalrevolution.com/wilson/information.html">
-    <div class="form1">  
-    	
-        <div id="errMsg" class="errMsg"></div>
-        <div class="tbl">
-            <div class="row"><br>
-                <div class="col-label"><label for="name">Full Name:</label></div>
-                <div class="col-input">
-                    <input id="name" type="text" name="name" class="text" value="" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="500">
-                </div>
-        
-        
-            </div>
-            <div class="row">
-                <div class="col-label"><label for="email">Email:</label></div>
-                <div class="col-input">
-                    <input class="text" id="email" type="text" name="email" value="" tabindex="501" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} ">
-                </div>
-        
-        
-            </div>
-            <div class="row">
-                <div class="col-label"><label for="phone">Cell Phone:</label></div>
-                <div class="col-input">
-                    <input type="text" id="phone" class="text" name="phone" value="" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502">
-                </div>
-        
-        
-            </div><br>
-            
-                            <div class="row">
-                          
-                    <input id="stext_optin" name="stext_optin" type="checkbox">&nbsp;&nbsp;<label for="stext_optin" class="note"> I agree to the <a href="https://www.amentalrevolution.com/terms.php" target="_blank" class="terms">Terms</a>.</label>
-                     <br>Send me Information via Text.
-                </div>     
-             
-        
-        
-        </div>
     
     
-    </div>
-    <div class="center">
-    	<input name="submit" id="btnSubmit" type="image" class="submit_btn" style="background: none; max-width: 100%;" alt="Submit Form" src="https://www.amentalrevolution.com/img/show_me_btn671x163.png" tabindex="502">
-    </div>
-</form>
-<script>
-$(document).ready(function() {
-	console.log("her");
-	/*
-	$("#btnSubmit").click = function(e) {
-		console.log("her");
-		console.log("here");
-		e.preventDefault();
-		return false;
-		if($("#name").val() == "") {
-			showError("Please Enter Name.");
-			e.preventDefault();
-			return false;
-		}
-	};
-	*/
-	
-	$('#frmForm').on('submit', function(e){
-		// validation code here
-		
-		if($("#name").val() == "") {
-			showError("Please enter Name.");
-			e.preventDefault();
-			return false;
-		}
-		
-		if($("#email").val() == "") {
-			showError("Please enter an Email.");
-			e.preventDefault();
-			return false;
-		}
-		
-		if($("#phone").val() == "") {
-			showError("Please enter Phone.");
-			e.preventDefault();
-			return false;
-		}
-		
-		
-		//if(!valid) {
-		//  e.preventDefault();
-		//}
-	  });
-});
-function showError(msg) {
-	$("#errMsg").html(msg);
-	$("#errMsg").show();
-}
+		<div class="form-container">
+			<form id="frmForm" method="post" action="https://www.amentalrevolution.com/wilson/information.html">
+				<h3>Would you like a FREE mental wellness guide and more info?</h3>
+				<p>Fill out the form below</p>
+					<div class="form1">  
 
-</script>
-    <br><br><br>
-<center>
-<span class="font5">We Value and Respect Your Privacy.<br><br>All Information Submitted is Processed and Secured with SSL Technology.<br><br>You May Opt-Out at Any Time.</span>		
-	</center>
-	
-</div>
-</div>
+							
+							<div class="tbl">
+									<div class="row"><br>
+
+											<div class="col-input">
+													<input required id="name" type="text" name="name" class="text" value="" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="500" placeholder="Full Name">
+											</div>
+
+
+									</div>
+									<div class="row">
+
+											<div class="col-input">
+													<input required class="text" id="email" type="email" name="email" value="" tabindex="501" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " placeholder="Email">
+											</div>
+
+
+									</div>
+									<div class="row">
+
+											<div class="col-input">
+													<input required type="tel" id="phone" class="text" name="phone" value="" onfocus=" if (this.value == '') { this.value = ''; }" onblur="if (this.value == '') { this.value='';} " tabindex="502" placeholder="Cell Phone">
+											</div>
+
+
+									</div><br>
+
+											<div class="row">
+
+													<input id="stext_optin" name="stext_optin" type="checkbox">&nbsp;&nbsp;<label for="stext_optin" class="note">I agree to the <a href="https://www.amentalrevolution.com/terms.php" target="_blank" class="terms">Terms</a>.</label>
+													 <br>Send me Information via Text.
+											</div>     
+
+
+
+							</div>
+
+
+					</div>
+					<div class="center">
+						<button type="submit" class="button topSpacing">Send me info</button>
+
+						<!--<input name="submit" id="btnSubmit" type="image" class="submit_btn" style="background: none; max-width: 100%;" alt="Submit Form" src="https://www.amentalrevolution.com/img/show_me_btn671x163.png" tabindex="502">-->
+					</div>
+					<div class="legal">
+						<p>We Value and Respect Your Privacy.</p>
+						<p>All Information Submitted is Processed and&nbsp;Secured&nbsp;with&nbsp;SSL&nbsp;Technology.</p>
+						<p>You May Opt-Out at Any Time.</p>		
+					</div>
+				
+			</form>
+		</div>
+			<script>
+			$(document).ready(function() {
+				console.log("her");
+
+				$('#frmForm').on('submit', function(e){
+					// validation code here
+
+					if($("#name").val() == "") {
+						showError("Please enter a name");
+						e.preventDefault();
+						return false;
+					}
+
+					if($("#email").val() == "") {
+						showError("Please enter an email address");
+						e.preventDefault();
+						return false;
+					}
+
+					if($("#phone").val() == "") {
+						showError("Please enter a phone number");
+						e.preventDefault();
+						return false;
+					}
+
+
+					//if(!valid) {
+					//  e.preventDefault();
+					//}
+					});
+			});
+			function showError(msg) {
+				$("#errMsg").html(msg);
+				$("#errMsg").show();
+			}
+			</script>
+			
 	</section>
 	
 	<section class="purpleBG">
