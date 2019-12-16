@@ -32,10 +32,10 @@ h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
 .header .menu-btn {	display: none; }
 .header .menu-btn:checked ~ .menu {	max-height: 240px;	}
 .header .menu-btn:checked ~ .menu-icon .navicon { background: transparent; }
-.header .menu-btn:checked ~ .menu-icon .navicon:before { transform: rotate(-45deg);	}
+.header .menu-btn:checked ~ .menu-icon .navicon:before { transform: rotate(-45deg); }
 .header .menu-btn:checked ~ .menu-icon .navicon:after { transform: rotate(45deg); }
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {	top: 0;	}
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after { top: 0; }
 
 /* 48em = 768px */
 @media (min-width: 48em) { 
@@ -96,7 +96,7 @@ ul.diseases li:hover { font-weight:bold; color:red; }
 .form-container { align-items: center; background: #fff; border-radius: 6px; box-shadow: 0 10px 50px 0 #ccc; display: flex; flex-direction: column; justify-content: center; margin: 0 auto; margin-bottom: 2rem; max-width: 350px; min-height: 100px; padding: 2rem; position: relative; text-align: center; }
 .form-container input { appearance: none; background: #eee; border: none; border-radius: 3px; box-sizing: border-box; font-size: inherit; margin-bottom: 1rem; padding: 1rem; width: 100%; }
 .is-hidden { display: none !important; }
-.form-container #stext_optin { width:20px; }
+.form-container #stext_optin { width:auto; }
 
 @keyframes rotate { 100% { transform: rotate(360deg); } }
 @keyframes dash { 0% { stroke-dasharray: 1,200; stroke-dashoffset: 0; } 50% { stroke-dasharray: 89,200; stroke-dashoffset: -35; } 100% { stroke-dasharray: 89,200; stroke-dashoffset: -124; } }
