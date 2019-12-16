@@ -97,6 +97,7 @@ ul.diseases li:hover { font-weight:bold; color:red; }
 .form-container input { appearance: none; background: #eee; border: none; border-radius: 3px; box-sizing: border-box; font-size: inherit; margin-bottom: 1rem; padding: 1rem; width: 100%; }
 .is-hidden { display: none !important; }
 .form-container #stext_optin { width:auto; }
+.legal p { font-size:14px; }
 
 @keyframes rotate { 100% { transform: rotate(360deg); } }
 @keyframes dash { 0% { stroke-dasharray: 1,200; stroke-dashoffset: 0; } 50% { stroke-dasharray: 89,200; stroke-dashoffset: -35; } 100% { stroke-dasharray: 89,200; stroke-dashoffset: -124; } }
