@@ -89,7 +89,7 @@ ul.diseases li:hover { font-weight:bold; color:red; }
 .vpadding { max-width: 600px; }		
 .badge { float:right; }
 .brett, .fpack { max-width:300px; margin:0 20px 20px 0; }
-.family { max-width:460px; }
+.family { max-width:460px; margin: 0 20px 20px 0; }
 .fpack { max-width:360px; }
 
 /* Contact Form */
