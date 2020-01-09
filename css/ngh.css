@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
 section { display:block; padding:25px 0 0 0; }
 #top { margin-top:85px; }
 .fleft { float:left; }
-.fright { float:right; }
+.fright { float:right; margin:0 0 15px 20px; }
 .fclear { clear:both; overflow:hidden; }
 .w10 { width:10%; }
 .w20 { width:20%; }
