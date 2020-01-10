@@ -262,42 +262,7 @@
 				
 			</form>
 		</div>
-			<script>
-			$(document).ready(function() {
-				console.log("her");
-
-				$('#frmForm').on('submit', function(e){
-					// validation code here
-
-					if($("#name").val() == "") {
-						showError("Please enter a name");
-						e.preventDefault();
-						return false;
-					}
-
-					if($("#email").val() == "") {
-						showError("Please enter an email address");
-						e.preventDefault();
-						return false;
-					}
-
-					if($("#phone").val() == "") {
-						showError("Please enter a phone number");
-						e.preventDefault();
-						return false;
-					}
-
-
-					//if(!valid) {
-					//  e.preventDefault();
-					//}
-					});
-			});
-			function showError(msg) {
-				$("#errMsg").html(msg);
-				$("#errMsg").show();
-			}
-			</script>
+			
 			
 	</section>
 	
@@ -344,13 +309,46 @@
 			$("body").on('click', '.top', function() {
 				$("nav.menu").toggleClass("menu_show");
 			});
+			
+			//AMentalRevolution Form
+			console.log("her");
+
+				$('#frmForm').on('submit', function(e){
+					// validation code here
+
+					if($("#name").val() == "") {
+						showError("Please enter a name");
+						e.preventDefault();
+						return false;
+					}
+
+					if($("#email").val() == "") {
+						showError("Please enter an email address");
+						e.preventDefault();
+						return false;
+					}
+
+					if($("#phone").val() == "") {
+						showError("Please enter a phone number");
+						e.preventDefault();
+						return false;
+					}
+
+
+					//if(!valid) {
+					//  e.preventDefault();
+					//}
+					});
 		});
+		function showError(msg) {
+				$("#errMsg").html(msg);
+				$("#errMsg").show();
+			}
 	</script>
 	<script>
 	var amareID = '21444'
 	var surveyURL = 'http://' + amareID + '.amarecontent.com/survey'
 	</script>
-	
 	<script>
 	  fbq('track', 'ViewContent');
 	</script>
