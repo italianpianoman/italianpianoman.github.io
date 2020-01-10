@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
 .header ul { margin: 0; padding: 0; list-style: none; overflow: hidden; }
 .header li a { display: block; color:#ffffff; padding: 20px 20px; dborder-right: 1px solid #f4f4f4; text-decoration: none; }
 .header li a:hover, .header .menu-btn:hover { background-color: #f4f4f4; color:#7B5BA0; }
+.header h1 { color:#ffffff; text-align:center; }
 
 /* menu */
 .header .menu { clear: both; max-height: 0; transition: max-height .2s ease-out; }
@@ -62,22 +63,13 @@ section { display:block; padding:25px 0 0 0; }
 .fleft { float:left; }
 .fright { float:right; margin:0 0 15px 20px; }
 .fclear { clear:both; overflow:hidden; }
-.nghGrid { margin-left: -20px; word-wrap: break-word; }
-.nghCol { float: left; min-height: 1px; padding-left: 20px; }
-.nghCol:after { content: ""; display: table; clear: both; }
-.w10 { width:10%; }
-.w20 { width:20%; }
-.w30 { width:30%; }
-.w33 { width:33.33333%; }
-.w35 { width:37%; }
-.w40 { width:40%; }
-.w45 { width:45%; }
-.w50 { width:50%; }
-.w60 { width:60%; }
-.w66 { width:66.66666%; }
-.w70 { width:70%; }
-.w80 { width:80%; }
-.w90 { width:90%; }
+
+.nghGrid { display:flex; justify-content: space-between; }
+.nghCol { padding-bottom:20px; }
+
+.ngh2 .nghCol { width:49%; }
+.ngh3 .nghCol { width:32%; }
+.ngh4 .nghCol { width:24%; }
 
 .video-responsive { overflow:hidden; padding-bottom:56.25%; position:relative; height:0; }
 .video-responsive iframe { left:0; top:0; height:100%; width:100%; position:absolute; }
@@ -85,10 +77,8 @@ section { display:block; padding:25px 0 0 0; }
 p { font-size:16px; line-height:25px; }
 h1 { font-size:25px; }
 h2 { font-size:24px; }
-ul[data-count="diseases"] { columns: 4; -webkit-columns: 4; -moz-columns: 4; margin-bottom: 0; }
-ul.diseases li:hover { font-weight:bold; color:red; } 
 
-.navbar { background: -webkit-radial-gradient(#604182, #3F2A56); background: -o-radial-gradient(#604182, #3F2A56); background: -moz-radial-gradient(#604182, #3F2A56); background: radial-gradient(#604182, #3F2A56); border bottom: solid 1px #ccc; padding: 15px 0 15px 0; position: fixed; top: 0; width: 100%; z-index: 999; }
+.navbar { background: -webkit-radial-gradient(#604182, #3F2A56); background: -o-radial-gradient(#604182, #3F2A56); background: -moz-radial-gradient(#604182, #3F2A56); background: radial-gradient(#604182, #3F2A56); border-bottom: solid 1px #ccc; padding: 15px 0 15px 0; position: fixed; top: 0; width: 100%; z-index: 999; }
 .wrapper, .bwrapper { max-width: 1024px; margin: auto; padding: 0 20px; }
 .bwrapper { max-width:750px; }
 .vpadding { max-width: 600px; }		
@@ -98,8 +88,12 @@ ul.diseases li:hover { font-weight:bold; color:red; }
 .fpack { max-width:360px; }
 
 /* Contact Form */
-.form-container { align-items: center; background: #fff; border-radius: 6px; box-shadow: 0 10px 50px 0 #ccc; display: flex; flex-direction: column; justify-content: center; margin: 0 auto; margin-bottom: 2rem; max-width: 350px; min-height: 100px; padding: 2rem; position: relative; text-align: center; }
+.form-container { align-items: center; background: #fff; border-radius: 6px; box-shadow: 0 10px 50px 0 #ccc; display: flex; flex-direction: column; justify-content: center; margin: 0 auto; margin-bottom: 2rem; max-width: 560px; min-height: 100px; padding: 2rem; position: relative; text-align: center; }
 .form-container input { appearance: none; background: #eee; border: none; border-radius: 3px; box-sizing: border-box; font-size: inherit; margin-bottom: 1rem; padding: 1rem; width: 100%; }
+.form-container #stext_optin { margin-bottom:10px; }
+.formtop { padding-bottom:20px; }
+.form1, .form2 { width:280px; }
+.form2 { padding-top:20px; }
 .is-hidden { display: none !important; }
 .form-container #stext_optin { width:auto; }
 .legal { padding-top:25px; }
@@ -114,16 +108,15 @@ ul.diseases li:hover { font-weight:bold; color:red; }
 .loading-spinner circle { animation: dash 1.5s ease-in-out infinite; stroke: #593f7b; stroke-dasharray: 1, 200; stroke-dashoffset: 0; stroke-linecap: round; }
 
 @media only screen and (max-width:1024px) {
-	.w35, .w60 { width:48%; }
+	
 }
 
 @media only screen and (max-width:768px) {
 	#top .flex-row { flex-flow:row-reverse wrap-reverse; }
 	#top h1 { padding-top:0; }
-	.w10, .w20, .w30, .w35, .w40, .w45, .w50, .w60, .w70, .w80, .w90 { width:100%; }
+	
 	.bottomPadding { padding-bottom:20px; }
 	section { padding:20px 0 0 0; }
-	ul[data-count="diseases"] { columns: 3; -webkit-columns: 3; -moz-columns: 3; }
 	.mobhide { display:none !important; }
 	.brett { max-width:200px; margin:0 20px 10px 0; }
 	.family { width:50%; }
@@ -131,15 +124,16 @@ ul.diseases li:hover { font-weight:bold; color:red; }
 	.chat { padding-right:70px; }
 }
 
-@media only screen and (max-width:620px) {
+@media only screen and (max-width:625px) {
 	h1 { font-size:20px; }
-	ul[data-count="diseases"] { columns: 2; -webkit-columns: 2; -moz-columns: 2; }
 	.form-container { box-shadow:none; margin-bottom: 1rem; padding:20px; }
+	.nghGrid { flex-direction: column; }
+	.ngh3 .nghCol, .ngh4 .nghCol, .ngh2 .nghCol { margin: 0 auto; width: 70%; }
+	.form1, .form2 { float: unset; margin: 0 auto; }
 }
 
 @media only screen and (max-width:479px) {
 	.surveybutton { font-size:12px; margin-top:11px; padding:8px 11px; }
-	ul[data-count="diseases"] { columns: 1; -webkit-columns: 1; -moz-columns: 1; }
 	.brett { max-width:120px; float:right; margin:0 0 10px 15px; }
 	.family, .fpack { margin:0 0 20px 0; max-width:500px; width:100%; }
 }
