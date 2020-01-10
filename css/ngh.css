@@ -7,6 +7,8 @@ h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
 .purpleBG { background: -webkit-radial-gradient(#7B5BA0,#3F2A56); background: -o-radial-gradient(#7B5BA0,#3F2A56); background: -moz-radial-gradient(#7B5BA0,#3F2A56); background: radial-gradient(#7B5BA0,#3F2A56); color: #fff; }
 /*p > strong { color:#7B5BA0; }*/
 .learned li:not(:last-child) { padding-bottom:20px; }
+.show320 { display:none !important; }
+.noTopPadding { padding-top:0; }
 
 .button, .surveybutton { background-color: #7B5BA0; border: 2px solid #3a3058; border-radius: 4px; color: #fff; box-shadow:0 8px 6px -6px black; cursor: pointer; display: inline-block; font-size: 18px; font-weight: 700; padding: 18px 37px 17px; text-align: center; text-decoration:none; text-transform: uppercase; transition: color .3s,background .3s; vertical-align: middle; }
 .button:hover { background-color:#593f7b; }
@@ -16,7 +18,7 @@ h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
 .header ul { margin: 0; padding: 0; list-style: none; overflow: hidden; }
 .header li a { display: block; color:#ffffff; padding: 20px 20px; dborder-right: 1px solid #f4f4f4; text-decoration: none; }
 .header li a:hover, .header .menu-btn:hover { background-color: #f4f4f4; color:#7B5BA0; }
-.header h1 { color:#ffffff; text-align:center; }
+.header h1 { color:#ffffff; text-align:center; padding:0 20px; }
 
 /* menu */
 .header .menu { clear: both; max-height: 0; transition: max-height .2s ease-out; }
@@ -60,6 +62,7 @@ h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
 
 section { display:block; padding:25px 0 0 0; }
 #top { margin-top:85px; }
+#topSimple { margin-top:50px; }
 .fleft { float:left; }
 .fright { float:right; margin:0 0 15px 20px; }
 .fclear { clear:both; overflow:hidden; }
@@ -126,16 +129,18 @@ h2 { font-size:24px; }
 
 @media only screen and (max-width:625px) {
 	h1 { font-size:20px; }
-	.form-container { box-shadow:none; margin-bottom: 1rem; padding:20px; }
+	.form-container { box-shadow:none; margin-bottom: 1rem; padding:0 20px 20px 20px; }
 	.nghGrid { flex-direction: column; }
 	.ngh3 .nghCol, .ngh4 .nghCol, .ngh2 .nghCol { margin: 0 auto; width: 70%; }
 	.form1, .form2 { float: unset; margin: 0 auto; }
 }
 
 @media only screen and (max-width:479px) {
+	#topSimple { padding-top:50px; }
 	.surveybutton { font-size:12px; margin-top:11px; padding:8px 11px; }
 	.brett { max-width:120px; float:right; margin:0 0 10px 15px; }
 	.family, .fpack { margin:0 0 20px 0; max-width:500px; width:100%; }
+	.show320 { display:block !important; }
 }
 @media only screen and (max-width:375px) {
 	h2 { font-size:19px; }
