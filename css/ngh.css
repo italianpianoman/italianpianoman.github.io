@@ -64,6 +64,7 @@ section { display:block; padding:25px 0 0 0; }
 .fclear { clear:both; overflow:hidden; }
 .nghGrid { margin-left: -20px; word-wrap: break-word; }
 .nghCol { float: left; min-height: 1px; padding-left: 20px; }
+.nghCol:after { content: ""; display: table; clear: both; }
 .w10 { width:10%; }
 .w20 { width:20%; }
 .w30 { width:30%; }
