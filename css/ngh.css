@@ -62,6 +62,8 @@ section { display:block; padding:25px 0 0 0; }
 .fleft { float:left; }
 .fright { float:right; margin:0 0 15px 20px; }
 .fclear { clear:both; overflow:hidden; }
+.nghGrid { margin-left: -20px; word-wrap: break-word; }
+.nghCol { float: left; min-height: 1px; padding-left: 20px; }
 .w10 { width:10%; }
 .w20 { width:20%; }
 .w30 { width:30%; }
