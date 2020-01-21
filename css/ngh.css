@@ -67,6 +67,18 @@ section { display:block; padding:25px 0 0 0; }
 .fright { float:right; margin:0 0 15px 20px; }
 .fclear { clear:both; overflow:hidden; }
 
+.w10 { width:10%; }
+.w20 { width:20%; }
+.w30 { width:30%; }
+.w35 { width:37%; }
+.w40 { width:40%; }
+.w45 { width:45%; }
+.w50 { width:50%; }
+.w60 { width:60%; }
+.w70 { width:70%; }
+.w80 { width:80%; }
+.w90 { width:90%; }
+
 .nghGrid { display:flex; justify-content: space-between; }
 .nghCol { padding-bottom:20px; }
 
@@ -111,13 +123,13 @@ h2 { font-size:24px; }
 .loading-spinner circle { animation: dash 1.5s ease-in-out infinite; stroke: #593f7b; stroke-dasharray: 1, 200; stroke-dashoffset: 0; stroke-linecap: round; }
 
 @media only screen and (max-width:1024px) {
-	
+	.w35, .w60 { width:48%; }
 }
 
 @media only screen and (max-width:768px) {
 	#top .flex-row { flex-flow:row-reverse wrap-reverse; }
 	#top h1 { padding-top:0; }
-	
+	.w10, .w20, .w30, .w35, .w40, .w45, .w50, .w60, .w70, .w80, .w90 { width:100%; }
 	.bottomPadding { padding-bottom:20px; }
 	section { padding:20px 0 0 0; }
 	.mobhide { display:none !important; }
