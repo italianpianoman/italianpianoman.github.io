@@ -140,7 +140,7 @@ h2 { font-size:24px; }
 	.chat { padding-right:70px; }
 	.mobcenter { text-align:center; }
 	.mobcenter ol { padding-inline-start: 0; display: inline-block; list-style: none; font-weight: bold; }
-	.mobcenter button { margin: 15px auto 30px; display: block; max-width: 200px; }
+	.learnmore { margin: 15px auto 30px; display: block; max-width: 200px; }
 }
 
 @media only screen and (max-width:625px) {
