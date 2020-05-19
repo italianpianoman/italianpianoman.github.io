@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
 .button:hover { background-color:#593f7b; }
 .surveybutton { background-color:#ffffff; color:#3a3058; font-size:14px; margin-top:5px; padding:12px 20px; }
 .surveybutton:hover { background-color:#0C549B; color:#ffffff; }
+.learnmore { padding: 10px 20px; margin:15px 0 30px 0; }
 
 .header ul { margin: 0; padding: 0; list-style: none; overflow: hidden; }
 .header li a { display: block; color:#ffffff; padding: 20px 20px; dborder-right: 1px solid #f4f4f4; text-decoration: none; }
@@ -139,6 +140,7 @@ h2 { font-size:24px; }
 	.chat { padding-right:70px; }
 	.mobcenter { text-align:center; }
 	.mobcenter ol { padding-inline-start: 0; display: inline-block; list-style: none; font-weight: bold; }
+	.mobcenter button { margin: 15px auto 30px; display: block; max-width: 200px; }
 }
 
 @media only screen and (max-width:625px) {
