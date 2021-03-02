@@ -24,6 +24,8 @@ h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
 /* menu */
 .header .menu { clear: both; max-height: 0; transition: max-height .2s ease-out; }
 .header .menu a { font-weight:bold; }
+.header .menu .get10 { background-color: #ffffff; color: #0C549B; }
+.header .menu .get10:hover {}
 
 /* menu icon */
 .header .menu-icon { cursor: pointer; display: inline-block; float: right; padding: 28px 10px 28px 20px; position: relative; user-select: none;	}
@@ -44,7 +46,7 @@ h1, h2, h3, h4, h5, h6, p { margin:0; padding:0; }
 /* 48em = 768px */
 @media (min-width: 48em) { 
 	.header li { float: left; font-size:18px; }
-	.header li a { padding: 16px 30px; }
+	.header li a { padding: 16px 25px; }
 	.header .menu { clear: none; float: right; max-height: none; }
 	.header .menu-icon { display: none; }
 }
