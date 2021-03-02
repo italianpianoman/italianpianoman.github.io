@@ -159,7 +159,7 @@ h2 { font-size:24px; }
 	#topSimple { padding-top:50px; }
 	.surveybutton { font-size:12px; margin-top:11px; padding:8px 11px; }
 	.brett { max-width:120px; float:right; margin:0 0 10px 15px; }
-	.family, .fpack, .skinny { margin:0 0 20px 0; max-width:500px; width:100%; }
+	.family, .fpack, .skinny { max-width:500px; width:100%; }
 	.show320 { display:block !important; }
 	.hide320 { display:none !important; }
 }
