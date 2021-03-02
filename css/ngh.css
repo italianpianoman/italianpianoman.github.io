@@ -138,7 +138,7 @@ h2 { font-size:24px; }
 	section { padding:20px 0 0 0; }
 	.mobhide { display:none !important; }
 	.brett { max-width:200px; margin:0 20px 10px 0; }
-	.family { width:50%; }
+	.family, .skinny { width:50%; }
 	.fpack { max-width:250px; }
 	.chat { padding-right:70px; }
 	.mobcenter { text-align:center; }
@@ -158,7 +158,7 @@ h2 { font-size:24px; }
 	#topSimple { padding-top:50px; }
 	.surveybutton { font-size:12px; margin-top:11px; padding:8px 11px; }
 	.brett { max-width:120px; float:right; margin:0 0 10px 15px; }
-	.family, .fpack { margin:0 0 20px 0; max-width:500px; width:100%; }
+	.family, .fpack, .skinny { margin:0 0 20px 0; max-width:500px; width:100%; }
 	.show320 { display:block !important; }
 }
 @media only screen and (max-width:375px) {
